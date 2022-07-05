@@ -1,5 +1,5 @@
+using Examples.Services;
 using LibCli.Interfaces;
-using Recycle.CLI.Interfaces;
 using Tests.Examples.Commands;
 
 namespace Tests.Examples.Handlers;

@@ -1,6 +1,4 @@
-using Recycle.CLI.Interfaces;
-
-namespace Recycle.CLI.Services;
+namespace Examples.Services;
 
 public class Service : IService
 {
