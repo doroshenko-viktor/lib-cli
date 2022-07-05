@@ -1,3 +1,4 @@
+using LibCli;
 using Microsoft.Extensions.DependencyInjection;
 using Recycle.CLI.Interfaces;
 using Recycle.CLI.Services;

@@ -8,6 +8,9 @@ public record TestCommand : ICommandSpecification
 {
     public string Name => "test";
 
-    [FromOptions("-t|--test", "test option", CommandOptionType.SingleValue)]
+    [FromOptions("-s|--string", "test string option", CommandOptionType.SingleValue)]
     public string? TestOption { get; set; }
+
+    [FromOptions("-i|--int", "test int option", CommandOptionType.SingleValue)]
+    public int TestIntOption { get; set; }
 }

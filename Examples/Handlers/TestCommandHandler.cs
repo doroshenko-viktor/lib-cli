@@ -1,5 +1,3 @@
-using System;
-using System.Threading.Tasks;
 using LibCli.Interfaces;
 using Recycle.CLI.Interfaces;
 using Tests.Examples.Commands;
@@ -17,6 +15,7 @@ public class TestCommandHandler : IAsyncCommandHandler<TestCommand>
 
     public Task<int> Handle(TestCommand command)
     {
+        Console.WriteLine(command.TestIntOption);
         Console.WriteLine(_service.GetString());
         Console.WriteLine(command.TestOption ?? "default test value");
         return Task.FromResult(0);
